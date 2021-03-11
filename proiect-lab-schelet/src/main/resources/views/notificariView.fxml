@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="270.0" prefWidth="650.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NotificariController">
+   <children>
+       <Pagination fx:id="page" layoutX="5.0" layoutY="10.0" prefHeight="220.0" prefWidth="638.0" />
+       <TableView fx:id="tableView" layoutX="5.0" layoutY="10.0" prefHeight="170.0" prefWidth="638.0">
+        <columns>
+          <TableColumn fx:id="tableColumnMesaj" minWidth="0.666656494140625" prefWidth="221.6666717529297" text="Mesaj" />
+            <TableColumn fx:id="tableColumnEveniment" prefWidth="255.0" text="Eveniment" />
+            <TableColumn fx:id="tableColumnData" prefWidth="159.33334350585938" text="Data" />
+
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="236.0" mnemonicParsing="false" onAction="#dezabonareB" text="Dezabonare" />
+      <Button layoutX="103.0" layoutY="235.0" mnemonicParsing="false" onAction="#subscribe" text="Reabonare" />
+   </children>
+</AnchorPane>

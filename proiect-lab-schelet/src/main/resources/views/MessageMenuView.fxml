@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="330.0" prefWidth="300.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MessageMenuController">
+    <children>
+      <Label layoutX="16.0" layoutY="271.0" text="Mesaj" />
+      <TextField fx:id="textFieldMesaj" layoutX="16.0" layoutY="291.0" />
+      <Button layoutX="175.0" layoutY="292.0" mnemonicParsing="false" onAction="#sendMesaj" text="Trimitere" />
+      <Button layoutX="240.0" layoutY="292.0" mnemonicParsing="false" onAction="#handleCancel" text="Anulare" />
+      <Pagination fx:id="page" layoutX="16.0" layoutY="11.0" prefHeight="243.0" prefWidth="270.0" />
+      <TableView fx:id="tableView" layoutX="20.0" layoutY="14.0" prefHeight="189.0" prefWidth="261.0">
+        <columns>
+          <TableColumn fx:id = "tableColumnNume" prefWidth="133.33333778381348" text="Nume" />
+          <TableColumn fx:id = "tableColumnPrenume" prefWidth="126.66667175292969" text="Prenume" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

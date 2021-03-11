@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="280.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateEventViewCtr">
+   <children>
+      <Label layoutX="22.0" layoutY="22.0" text="Nume Eveniment" />
+      <TextField fx:id="textFieldNume" layoutX="22.0" layoutY="57.0" />
+      <Label layoutX="22.0" layoutY="103.0" text="Descriere Eveniment" />
+      <Label layoutX="26.0" layoutY="284.0" text="Data Eveniment" />
+      <Button layoutX="14.0" layoutY="412.0" mnemonicParsing="false" onAction="#createEvent" text="Creare Eveniment" />
+      <Button layoutX="127.0" layoutY="412.0" mnemonicParsing="false" onAction="#handleCancel" text="Iesire" />
+      <DatePicker fx:id="data" layoutX="22.0" layoutY="313.0" />
+      <TextArea fx:id="descriereField" layoutX="18.0" layoutY="130.0" prefHeight="137.0" prefWidth="209.0" />
+      <Label layoutX="27.0" layoutY="348.0" text="Ora Eveniment(ora:minut)" />
+      <TextField fx:id="ora" layoutX="22.0" layoutY="378.0" />
+   </children>
+</AnchorPane>

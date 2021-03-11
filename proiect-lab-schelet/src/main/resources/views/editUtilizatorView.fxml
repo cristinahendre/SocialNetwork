@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="510.0" prefWidth="310.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditUtilizatorController">
+    <children>
+      <Pagination fx:id="page" layoutX="8.0" layoutY="52.0" prefHeight="337.0" prefWidth="243.0" />
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="52.0" prefHeight="285.0" prefWidth="231.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNume" prefWidth="110.33332574367523" text="Nume" />
+          <TableColumn fx:id="tableColumnPrenume" prefWidth="120.3333511352539" text="Prenume" />
+        </columns>
+      </TableView>
+      <Label fx:id="textLabel" layoutX="40.0" layoutY="360.0" />
+          <Button fx:id="deleteButton" layoutX="14.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleDeleteFriend" prefHeight="25.0" prefWidth="133.0" text="Sterge Prieten">
+              <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+              </padding>
+          </Button>
+          <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleCancel" text="Iesire" />
+      <Label layoutX="5.0" layoutY="14.0" text="Prietenii Dumneavoastra" />
+      <Label layoutX="14.0" layoutY="449.0" text="Doriti mai multi prieteni?" />
+      <Button layoutX="14.0" layoutY="477.0" mnemonicParsing="false" onAction="#addFriends" text="Adauga Prieteni" />
+    </children>
+</AnchorPane>

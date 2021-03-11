@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="210.0" prefWidth="210.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RapoarteController">
+    <children>
+        <DatePicker fx:id="DataPickerData" layoutX="14.0" layoutY="43.0" />
+        <DatePicker fx:id="DataPickerDataFinal" layoutX="14.0" layoutY="118.0" />
+        <Label layoutX="25.0" layoutY="14.0" text="Data Inceput:" />
+        <Label layoutX="25.0" layoutY="90.0" text="Data Sfarsit:" />
+        <Button fx:id="buton" layoutX="14.0" layoutY="152.0" mnemonicParsing="false" onAction="#Raport1" text="Generare" />
+    </children>
+</AnchorPane>

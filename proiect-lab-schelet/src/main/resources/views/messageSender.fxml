@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="690.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MessageSender">
+   <children>
+      <Pagination fx:id="page" layoutX="14.0" layoutY="51.0" prefHeight="252.0" prefWidth="656.0" />
+      <TableView fx:id="tableView" layoutX="13.0" layoutY="51.0" prefHeight="200.0" prefWidth="656.0">
+        <columns>
+          <TableColumn fx:id="tableColumnFrom" prefWidth="125.0" text="De la.." />
+          <TableColumn fx:id="tableColumnTo" prefWidth="157.6666717529297" text="Catre.." />
+            <TableColumn fx:id="tableColumnMesaj" prefWidth="209.66665649414062" text="Mesaj" />
+            <TableColumn fx:id="tableColumnData" prefWidth="163.0" text="Data" />
+
+        </columns>
+      </TableView>
+      <Label fx:id="textNume" layoutX="13.0" layoutY="20.0" />
+      <TextArea fx:id="textArea" layoutX="21.0" layoutY="319.0" prefHeight="67.0" prefWidth="278.0" />
+      <Button layoutX="309.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleSend" text="Trimite Mesaj" />
+   </children>
+
+</AnchorPane>

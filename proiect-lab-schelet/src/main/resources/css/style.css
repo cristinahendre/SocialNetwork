@@ -1,0 +1,39 @@
+.button {
+    -fx-text-fill: White	;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#538284, 	#68a3a5);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.label {
+    -fx-font-size: 14px;
+    /*-fx-font-weight:bold;*/
+
+
+    -fx-text-fill:  #538284;
+
+
+}
+.table-row-cell:selected {
+    -fx-background-color: #94f3f0;
+
+
+}
+.table-row-cell:selected .text {
+    -fx-fill:  Black;
+}
+
+/*.text{*/
+/*    -fx-fill: #0000e6;*/
+/*}*/
+.table-view{
+    -fx-background-color: #94f3f0;
+
+    -fx-font-size: 14px;
+}
+
+.root{
+    -fx-background-color: 	#a2f0d7;
+
+
+}

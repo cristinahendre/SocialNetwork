@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SendMoreController">
+   <children>
+      <Pagination fx:id="page" layoutX="154.0" layoutY="101.0" prefHeight="268.0" prefWidth="231.0" />
+      <TableView fx:id="tableView" layoutX="158.0" layoutY="101.0" prefHeight="217.0" prefWidth="231.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNume" prefWidth="96.33332824707031" text="Nume" />
+          <TableColumn fx:id="tableColumnPrenume" prefWidth="133.33334096272787" text="Prenume" />
+        </columns>
+      </TableView>
+      <Label layoutX="218.0" layoutY="20.0" text="Alegeti un utilizator:" />
+      <TextField fx:id="textFieldNume" layoutX="200.0" layoutY="58.0" onKeyTyped="#handlePick" />
+      <Button layoutX="14.0" layoutY="384.0" mnemonicParsing="false" text="Alege destinatar" visible="false" />
+      <TextArea fx:id="textMesaj" layoutX="8.0" layoutY="113.0" prefHeight="181.0" prefWidth="131.0" />
+      <Button layoutX="34.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleSend" text="Trimite Mesaj" />
+      <Button layoutX="39.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleCancel" text="Iesire" />
+      <ImageView fitHeight="96.0" fitWidth="115.0" layoutX="18.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+       <image>
+           <Image url="@../images/bluestars.png" />
+       </image>
+      </ImageView>
+   </children>
+
+</AnchorPane>

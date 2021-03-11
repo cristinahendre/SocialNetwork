@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="1000.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AfisareCereriController">
+    <children>
+        <SplitPane orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="665.0">
+               <children>
+                  <Pagination fx:id="pageTrimise" layoutX="15.0" layoutY="52.0" prefHeight="268.0" prefWidth="447.0" />
+                  <TableView fx:id="tableViewTrimise" layoutX="15.0" layoutY="52.0" onMouseClicked="#disableButtons2" prefHeight="213.0" prefWidth="447.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnFrom" prefWidth="91.33332538604736" text="De la cine.." />
+                      <TableColumn fx:id="tableColumnTo" prefWidth="123.66666412353516" text="Catre cine.. " />
+                      <TableColumn fx:id="tableColumnData" prefWidth="93.66667175292969" text="Data" />
+                        <TableColumn fx:id="tableColumnStatus" prefWidth="138.33331298828125" text="Status" />
+
+                    </columns>
+                  </TableView>
+                  <Label layoutX="14.0" layoutY="14.0" text="Cererile trimise de dumneavoastra" />
+                  <Button fx:id="aButton" layoutX="507.0" layoutY="343.0" mnemonicParsing="false" onAction="#approveC" text="Aproba Cererea" />
+                  <Button fx:id="delButton" layoutX="120.0" layoutY="343.0" mnemonicParsing="false" onAction="#deleteC" text="Sterge Cererea" />
+                  <Button fx:id="rejButton" layoutX="620.0" layoutY="343.0" mnemonicParsing="false" onAction="#rejectC" text="Refuza Cererea" />
+                  <Pagination fx:id="pageC" layoutX="476.0" layoutY="44.0" prefHeight="276.0" prefWidth="516.0" />
+                  <TableView fx:id="tableView" layoutX="476.0" layoutY="52.0" onMouseClicked="#disableButtons" prefHeight="213.0" prefWidth="516.0">
+                    <columns>
+                        <TableColumn fx:id="tableColumnFromT" prefWidth="115.3333740234375" text="De la cine.." />
+                        <TableColumn fx:id="tableColumnToT" prefWidth="148.0" text="Catre cine.. " />
+                        <TableColumn fx:id="tableColumnDataT" prefWidth="121.33331298828125" text="Data" />
+                        <TableColumn fx:id="tableColumnStatusT" prefWidth="130.3333740234375" text="Status" />
+                    </columns>
+                  </TableView>
+                  <Separator layoutX="462.0" layoutY="59.0" orientation="VERTICAL" prefHeight="203.0" prefWidth="12.0" />
+                  <Label layoutX="483.0" layoutY="14.0" text="Cererile Primite de dumneavoastra" />
+               </children></AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+.label{
+    -fx-font-weight: bold;
+
+}
+.label.text{
+    -fx-font-size:18;
+}
+
+.table-view.scroll-bar{
+    -fx-background-color: #F0F8FF	;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:  Black;
+
+
+}
+.table-row-cell:selected .text {
+
+    -fx-fill:   #F5F5F5;
+}

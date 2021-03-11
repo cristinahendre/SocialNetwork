@@ -1,0 +1,24 @@
+.button {
+    -fx-text-fill: Black	;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(  #ff4d4d , #ecffb3);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.label {
+    -fx-font-size: 14px;
+    /*-fx-font-weight:bold;*/
+    -fx-background-color:   #ffe6e6;
+
+    -fx-text-fill:   #660000;
+    -fx-highlight-text-fill:  #999999;
+    -fx-effect: dropshadow( gaussian , rgba(120, 90, 90, 0.5), 0,0,0,1 );
+}
+
+.password-field{
+    -fx-text-fill:  #99004d;
+}
+
+.text-field{
+    -fx-text-fill:  #99004d;
+}

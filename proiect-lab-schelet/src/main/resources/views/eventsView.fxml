@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EvenimentController">
+    <children>
+        <Pagination fx:id="page" prefHeight="337.0" prefWidth="778.0" />
+        <TableView fx:id="tableView" onMouseClicked="#descriereGet" prefHeight="295.0" prefWidth="778.0">
+            <columns>
+                <TableColumn fx:id="tableColumnOrg" prefWidth="150.99999237060547" text="Organizator" />
+                <TableColumn fx:id="tableColumnPart" prefWidth="264.33335876464844" text="Participanti" />
+                <TableColumn fx:id="tableColumnDataE" minWidth="0.0" prefWidth="181.33334350585938" text="Data" />
+                <TableColumn fx:id="tableColumnNume" prefWidth="180.33331298828125" text="Nume" />
+
+            </columns>
+        </TableView>
+      <Label layoutX="14.0" layoutY="347.0" text="Pentru a va inscrie la un eveniment, selectati-l si apasati butonul:." />
+      <Button fx:id="button" layoutX="415.0" layoutY="345.0" mnemonicParsing="false" onAction="#inscriereEvent" text="Inscriere" />
+      <Label layoutX="532.0" layoutY="317.0" text="Descriere Eveniment Selectat" />
+      <TextArea fx:id="descriereText" layoutX="523.0" layoutY="345.0" prefHeight="144.0" prefWidth="269.0" />
+      <ImageView fitHeight="90.0" fitWidth="323.0" layoutX="264.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+              <Image url="@../images/funnystar.png" />
+          </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="380.0" text="Toti Participantii" />
+      <TextArea fx:id="participantiText" layoutX="14.0" layoutY="408.0" prefHeight="82.0" prefWidth="219.0" />
+    </children>
+</AnchorPane>

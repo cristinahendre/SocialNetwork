@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MyEventsController">
+    <children>
+        <Pagination fx:id="page" layoutX="11.0" layoutY="50.0" prefHeight="346.0" prefWidth="778.0" />
+        <TableView fx:id="tableView" layoutX="11.0" layoutY="51.0" onMouseClicked="#descriereGet" prefHeight="295.0" prefWidth="778.0">
+            <columns>
+                <TableColumn fx:id="tableColumnOrg" prefWidth="150.99999237060547" text="Organizator" />
+                <TableColumn fx:id="tableColumnPart" prefWidth="264.33335876464844" text="Participanti" />
+                <TableColumn fx:id="tableColumnDataE" minWidth="0.0" prefWidth="181.33334350585938" text="Data" />
+                <TableColumn fx:id="tableColumnNume" prefWidth="180.33331298828125" text="Nume" />
+
+            </columns>
+        </TableView>
+        <Label layoutX="479.0" layoutY="415.0" text="Descriere Eveniment Selectat" />
+        <TextArea fx:id="descriereText" layoutX="479.0" layoutY="435.0" prefHeight="54.0" prefWidth="313.0" />
+        <ImageView fitHeight="90.0" fitWidth="323.0" layoutX="233.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/funnystar.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="21.0" layoutY="22.0" text="Evenimente organizate de dumneavoastra:" />
+      <Label layoutX="7.0" layoutY="388.0" text="Participanti" />
+      <TextArea fx:id="participantiArea" layoutX="7.0" layoutY="408.0" prefHeight="90.0" prefWidth="188.0" />
+    </children>
+</AnchorPane>

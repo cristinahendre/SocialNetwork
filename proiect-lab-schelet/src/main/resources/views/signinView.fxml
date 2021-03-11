@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="200.0" stylesheets="@../css/loginstyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SigninController">
+    <children>
+        <Label layoutX="65.0" layoutY="4.0" text="Nume" />
+        <TextField fx:id="textFieldNume" layoutX="22.0" layoutY="31.0" />
+        <Label layoutX="60.0" layoutY="65.0" text="Prenume" />
+        <Button fx:id="buttonToSave" layoutX="59.0" layoutY="260.0" mnemonicParsing="false" onAction="#saveUser" text="Sign In" />
+      <TextField fx:id="textFieldPrenume" layoutX="22.0" layoutY="94.0" />
+      <Label layoutX="38.0" layoutY="130.0" text="Adresa de email" />
+      <TextField fx:id="textFieldEmail" layoutX="22.0" layoutY="161.0" />
+      <Label layoutX="74.0" layoutY="194.0" text="Parola" />
+      <PasswordField fx:id="textFieldParola" layoutX="26.0" layoutY="222.0" />
+    </children>
+</AnchorPane>
